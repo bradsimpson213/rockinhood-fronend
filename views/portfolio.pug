@@ -1,0 +1,28 @@
+extends layout.pug
+
+block content
+    include includes/navigation.pug
+    div.portfolio__body
+        div.portfolio__header
+        div.portfolio__header-change
+        div.portfolio__chart
+        div.portfolio__fund
+            div.portfolio__fund-header Fund Your Account
+            div.portfolio__fund-text Your bank account is ready! Fund your Robinhood account to begin trading.
+            a(href="/fund" class="portfolio__fund-link") Add Funds
+        //- div.portfolio__movers-container
+        //-     div.portfolio__movers Top Movers
+        //-     div.portfolio__movers-cards
+        //- div.portfolio__showmore1 Show More
+        div.portfolio__news-container
+            div.portfolio__news-title Recent News
+            div.portfolio__split
+            div.portfolio__news
+        div.portfolio__watchlist-container
+            div.portfolio__watchlist-title Watchlist
+            //- div.portfolio__watchlist
+            //-     div.portfolio__watchlist-name 
+            //-     div.portfolio__watchlist-chart
+            //-     div.portfolio__watchlist-price $10
+    script(src="/js/portfolio.js")
+    script(src="/js/sign-out.js")
